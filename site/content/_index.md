@@ -1,6 +1,6 @@
 ---
-title: "Great coffee with a conscience"
-subtitle: Support sustainable farming while enjoying a cup
+title: "Hashem's roastery"
+subtitle: A Blend of Tradition, A Taste of Home
 image: /img/home-jumbotron.jpg
 blurb:
     heading: Why Kaldi?
