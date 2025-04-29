@@ -13,3 +13,20 @@
     box-shadow: inset 0 -4px 0 var(--primary);
   }
 }
+/* Aspect ratio container */
+.aspect-ratio--1x1 {
+  padding-bottom: 100%;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Image cover styling */
+.img-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
