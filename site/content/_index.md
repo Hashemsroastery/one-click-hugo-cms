@@ -19,7 +19,8 @@ intro:
     challenges that the region has faced. It is still managed by him and his
     sons Hassan, Ahmad and Ali till the moment.
 products:
-  - image: img/Baba.jpg
+  - image: img/award.jpg
+  - image: img/store.jpg
     text: '"Once you love the business and give it everything you have, it will give
       you back certainly." This what Mohammad always says to his children.'
 values:
