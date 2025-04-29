@@ -18,7 +18,10 @@ intro:
     all his life and dedication to make his business succeed despite all the
     challenges that the region has faced. It is still managed by him and his
     sons till the moment.
-products: []
+products:
+  - image: img/Baba.jpg
+    text: '"Once you love the business and give it everything you have, it will give
+      you back certainly." This what Mohammad always says to his children.'
 values:
   heading: Our values
   text: Coffee is an amazing part of human culture but it has a dark side too –
