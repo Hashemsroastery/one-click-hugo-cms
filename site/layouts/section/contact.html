@@ -1,24 +1,33 @@
 {{ define "main" }}
 
 <div class="ph3 bg-off-white">
-	<div class="center mw6 pv3">
+  <div class="center mw6 pv3">
 
-		<img src="{{ .Params.logo }}" alt="" class="db w6 center pv4">
+    <img src="{{ .Params.logo }}" alt="" class="db w6 center pv4">
 
-		{{ .Content }}
+    {{ .Content }}
 
-		<div class="flex-ns mb3">
-	        	{{ range .Params.contact_entries }}
-				<div>
-					<h4 class="f4 b lh-title mb2 brown">{{ .heading }}</h4>
-					<p>{{ .text }}</p>
-				</div>
-			{{ end }}
-		</div>
+    <div class="flex-ns mb3">
+      {{ range .Params.contact_entries }}
+        <div>
+          <h4 class="f4 b lh-title mb2 brown">{{ .heading }}</h4>
+          <p>{{ .text }}</p>
+        </div>
+      {{ end }}
+    </div>
 
-		{{ partial "contact-form" . }}
+    <div class="tc">
+      <a 
+        href="https://maps.app.goo.gl/CitrXMKGQ1iEnbqk7" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="btn raise bg-brown white ph4 pv3 br2 dib"
+      >
+        Store location
+      </a>
+    </div>
 
-	</div>
+  </div>
 </div>
 
 {{ end }}
