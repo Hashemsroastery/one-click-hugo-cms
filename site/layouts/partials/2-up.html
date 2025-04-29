@@ -1,5 +1,5 @@
 <div class="bg-off-white vh-100 flex items-center justify-center">
-  <div class="ph3 mw7 center w-100">
+  <div class="ph3 mw8 center w-100">
     <h2 class="f2 b lh-title mb3 tc">{{.intro.heading}}</h2>
 
     <!-- Wider justified paragraph -->
@@ -7,13 +7,15 @@
       <p>{{.intro.text}}</p>
     </div>
 
-    <!-- Product grid -->
-    <div class="flex-ns mhn2-ns mb3 justify-center">
-      {{ range .products }}
-      <div class="ph2-ns w-50-ns">
-        <img src="{{.image}}" alt="" class="center db mb3" style="width: 600px">
-        <p class="tj">{{.text}}</p>
-      </div>
+    <!-- Two photos side by side -->
+    <div class="flex justify-center flex-wrap mb4">
+      {{ range $index, $product := .products }}
+        {{ if lt $index 2 }}
+        <div class="pa3" style="max-width: 600px; width: 100%;">
+          <img src="{{ $product.image }}" alt="" class="db center mb3" style="width: 100%; height: auto;">
+          <p class="tj">{{ $product.text }}</p>
+        </div>
+        {{ end }}
       {{ end }}
     </div>
 
