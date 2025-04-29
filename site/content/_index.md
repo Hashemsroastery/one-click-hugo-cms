@@ -24,8 +24,11 @@ products:
       you back certainly." This what Mohammad always says to his children.'
 values:
   heading: Our values
-  text: Coffee is an amazing part of human culture but it has a dark side too –
-    one of colonialism and mindless abuse of natural resources and human lives.
-    We want to turn this around and return the coffee trade to the drink’s
-    exhilarating, empowering and unifying nature.
+  text: At the heart of everything we do is our deep appreciation for our
+    customers, the true driving force behind our daily growth. Every order and
+    every request matters to us, not only as a transaction but as an opportunity
+    to evolve, strengthen our business, and deepen our connection with the
+    community. We're proud to be rooted in the South of Lebanon, where it's a
+    privilege to share our diverse selection of roasted coffee, nuts and all
+    other products with the many vibrant communities we serve.
 ---
