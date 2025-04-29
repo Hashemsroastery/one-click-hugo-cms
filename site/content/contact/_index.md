@@ -5,7 +5,9 @@ contact_entries:
   - heading: Location
     text: Bent Jbeil, Sahet al-Saray, Main street
   - heading: Working hours
-    text: "Monday – Sunday: 8:30AM – 7PM  Friday: 9AM - 1PM"
+    text: |-
+      Monday – Sunday: 8:30AM – 7PM
+      Friday: 9AM - 1PM
   - heading: Contact
     text: Hassan Hashem  +961 3 597784
 ---
