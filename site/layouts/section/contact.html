@@ -11,6 +11,9 @@
 	        	{{ range .Params.contact_entries }}
 				<div>
 					<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
+					{{ if eq .heading "Working hours" }}
+            				  <p class="white-space-pre-line">{{ .text | safeHTML }}</p>
+         				{{ else }}
 					<p>{{ .text }}</p>
 				</div>
 			{{ end }}
