@@ -20,6 +20,8 @@ intro:
     sons Hassan, Ahmad and Ali till the moment.
 products:
   - image: img/award.jpg
+    text: 'Our excellence lies not only in the variety and quality of our products, but also in the consistent cleanliness of our store.
+      Additionally, we are proud to have received the highest award for food safety ranking.'
   - image: img/store.jpg
     text: '"Once you love the business and give it everything you have, it will give
       you back certainly." This what Mohammad always says to his children.'
