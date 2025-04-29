@@ -17,7 +17,7 @@ intro:
     main street. The owner of the store is the father Mohammad Hashem which gave
     all his life and dedication to make his business succeed despite all the
     challenges that the region has faced. It is still managed by him and his
-    sons till the moment.
+    sons Hassan, Ahmad and Ali till the moment.
 products:
   - image: img/Baba.jpg
     text: '"Once you love the business and give it everything you have, it will give
