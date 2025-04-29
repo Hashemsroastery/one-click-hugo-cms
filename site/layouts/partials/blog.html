@@ -1,17 +1,42 @@
 <div class="bg-off-white pv4">
   <div class="ph3 mw7 center">
-    <h2 class="f2 b lh-title mb3">Latest Products</h2> 
+    <h2 class="f2 b lh-title mb3">Featured Products</h2>
 
+    <!-- Three photos grid -->
     <div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
-      {{ range first 4 (where .Data.Pages "Type" "post") }}
-        <div class="ph1-ns w-50-ns flex">
-          {{ .Render "li" }}
+      <!-- First photo -->
+      <div class="ph1-ns w-100 w-third-ns flex">
+        <div class="ba b--light-gray br2 overflow-hidden">
+          <img src="/img/product1.jpg" alt="Product 1" class="db w-100">
+          <div class="pa2">
+            <p class="ma0">Description for Product 1</p>
+          </div>
         </div>
-      {{ end }}
+      </div>
+      
+      <!-- Second photo -->
+      <div class="ph1-ns w-100 w-third-ns flex">
+        <div class="ba b--light-gray br2 overflow-hidden">
+          <img src="/img/product2.jpg" alt="Product 2" class="db w-100">
+          <div class="pa2">
+            <p class="ma0">Description for Product 2</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Third photo -->
+      <div class="ph1-ns w-100 w-third-ns flex">
+        <div class="ba b--light-gray br2 overflow-hidden">
+          <img src="/img/product3.jpg" alt="Product 3" class="db w-100">
+          <div class="pa2">
+            <p class="ma0">Description for Product 3</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="tc">
-      <a href="/products" class="btn raise">View All Products</a> 
+      <a href="/products" class="btn raise">View All Products</a>
     </div>
   </div>
 </div>
