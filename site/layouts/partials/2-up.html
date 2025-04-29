@@ -1,20 +1,20 @@
-<div class="bg-off-white min-vh-100 flex items-center justify-center pa3">
-  <div class="ph3 mw8 center w-100">
-    <!-- Heading with reduced margin -->
-    <h2 class="f2 b lh-title mb2 tc">{{.intro.heading}}</h2>
+<div class="bg-off-white min-vh-100 flex items-center justify-center pa3-ns pa2">
+  <div class="ph3-ns ph2 mw8 center w-100">
+    <!-- Heading with responsive spacing -->
+    <h2 class="f2-ns f3 b lh-title mb1 mb2-ns tc">{{.intro.heading}}</h2>
 
-    <!-- Text with tighter spacing -->
-    <div class="center measure-wide tj mb3 ph2">
+    <!-- Text with responsive spacing -->
+    <div class="center measure-wide tj mb2 mb3-ns ph2">
       <p class="hyphens ma0">{{.intro.text}}</p>
     </div>
 
-    <!-- Products grid with proper alignment -->
-    <div class="flex flex-column flex-row-ns justify-between mb3">
+    <!-- Products grid with mobile optimization -->
+    <div class="flex flex-column flex-row-ns justify-between mb2 mb3-ns">
       {{ range $index, $product := .products }}
         {{ if lt $index 2 }}
-        <div class="pa1 pa2-ns w-100 mw48-ns">
+        <div class="pa1 pa2-ns w-100 mw48-ns mb2 mb0-ns">
           <div class="h-100 flex flex-column">
-            <img src="{{ $product.image }}" alt="" class="db center mb2 w-100" style="max-width: 600px; height: auto;">
+            <img src="{{ $product.image }}" alt="" class="db center mb1 mb2-ns w-100" style="max-width: 600px; height: auto;">
             <p class="tj ma0 flex-grow-1">{{ $product.text }}</p>
           </div>
         </div>
@@ -22,8 +22,8 @@
       {{ end }}
     </div>
 
-    <!-- Button with minimal top spacing -->
-    <div class="tc mt2">
+    <!-- Button with responsive spacing -->
+    <div class="tc mt1 mt2-ns">
       <a href="https://maps.app.goo.gl/6igbvTvokUKUtJ9B7" class="btn raise" target="_blank">Store locator</a>
     </div>
   </div>
