@@ -1,28 +1,28 @@
 <div class="bg-off-white min-vh-100 flex items-center justify-center pa3">
   <div class="ph3 mw8 center w-100">
-    <!-- Heading -->
-    <h2 class="f2 b lh-title mb3 tc">{{.intro.heading}}</h2>
+    <!-- Heading with reduced margin -->
+    <h2 class="f2 b lh-title mb2 tc">{{.intro.heading}}</h2>
 
-    <!-- Wider justified paragraph -->
-    <div class="center measure-wide tj mb4 ph2">
-      <p class="hyphens">{{.intro.text}}</p>
+    <!-- Text with tighter spacing -->
+    <div class="center measure-wide tj mb3 ph2">
+      <p class="hyphens ma0">{{.intro.text}}</p>
     </div>
 
-    <!-- Two photos side by side -->
-    <div class="flex flex-column flex-row-ns justify-center items-center-ns mb4">
+    <!-- Products grid with minimal gaps -->
+    <div class="flex flex-column flex-row-ns justify-center items-center-ns mb3">
       {{ range $index, $product := .products }}
         {{ if lt $index 2 }}
-        <div class="pa2 pa3-ns w-100 mw6">
-          <img src="{{ $product.image }}" alt="" class="db center mb3 w-100" style="max-width: 600px; height: auto;">
-          <p class="tj">{{ $product.text }}</p>
+        <div class="pa1 pa2-ns w-100 mw6">
+          <img src="{{ $product.image }}" alt="" class="db center mb2 w-100" style="max-width: 600px; height: auto;">
+          <p class="tj ma0">{{ $product.text }}</p>
         </div>
         {{ end }}
       {{ end }}
     </div>
 
-    <!-- Button -->
-    <div class="tc">
-      <a href="https://maps.app.goo.gl/fBVkPvrQ4cJgP1y86" class="btn raise" target="_blank">Store locator</a>
+    <!-- Button with minimal top spacing -->
+    <div class="tc mt2">
+      <a href="https://maps.google.com/?q=YOUR_STORE_ADDRESS" class="btn raise" target="_blank">Find us on Google Maps</a>
     </div>
   </div>
 </div>
