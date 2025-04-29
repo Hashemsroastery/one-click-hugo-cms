@@ -24,7 +24,7 @@ products:
       Additionally, we are proud to have received the highest award for food safety ranking.'
   - image: img/store.jpg
     text: '"Once you love the business and give it everything you have, it will give
-      you back certainly." This what Mohammad always says to his children.'
+      you back certainly." This is what Mohammad always says to his children.'
 values:
   heading: Our values
   text: At the heart of everything we do is our deep appreciation for our
