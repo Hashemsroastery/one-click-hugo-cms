@@ -11,16 +11,14 @@ intro:
 sections:
   - heading: Coffee Beans
     products:
-      - name: Ethiopian Yirgacheffe
-        image: /img/coffee-ethiopian.jpg
+      - name: Green Brazilian coffee beans
+        image: /img/Green coffee.jpg
         description: >-
-          A floral and citrusy single-origin coffee with bright acidity and 
-          medium body, grown in the birthplace of coffee.
-      - name: Colombian Supremo
-        image: /img/coffee-colombian.jpg
+          Fresh Premium green Brazilian coffee beans
+      - name: Black roasted Brazilian coffee beans
+        image: /img/Black coffee.jpg
         description: >-
-          Well-balanced with caramel sweetness and nutty undertones, 
-          this classic Colombian coffee is crowd-pleaser.
+          Fresh Premium black roasted Brazilian coffee beans
       - name: Sumatra Mandheling
         image: /img/coffee-sumatra.jpg
         description: >-
