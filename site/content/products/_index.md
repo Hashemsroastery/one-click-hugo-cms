@@ -1,3 +1,4 @@
+---
 title: Products
 type: products
 image: /img/Main-product-header.jpg
@@ -26,4 +27,4 @@ sections:
       - image: /img/herbs.jpg
         text: >
           Organic dried herbs
-
+  ---
