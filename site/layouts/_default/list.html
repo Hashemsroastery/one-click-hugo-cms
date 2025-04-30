@@ -4,6 +4,10 @@
 
 <div class="mw7 center">
   <ul id="blog-list" class="flex-ns flex-wrap mhn1-ns pa3">
+  <div class="tc pv4">
+    <img src="/img/Menu-spices.png" alt="Feature" style="max-width: 100%; width: 800px; height: auto;">
+  </div>
+    
   {{ range (where (.Paginator 4).Pages.ByPublishDate.Reverse "Params.hidden" "ne" true) }}
       <li class="w-50-ns ph1-ns flex">
         {{ .Render "li"}}
