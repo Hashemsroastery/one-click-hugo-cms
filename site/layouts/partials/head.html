@@ -1,9 +1,9 @@
 <head>
   <title>
     {{ if .IsHome }}
-      {{ $.Site.Title }}  <!-- Uses only the clean title from hugo.toml -->
+      {{ $.Site.Title }} 
     {{ else }}
-      {{ .Title | plainify }} | {{ $.Site.Title }}  <!-- Removes any HTML tags from page titles -->
+      {{ .Title | plainify }} | {{ $.Site.Title }}
     {{ end }}
   </title>
 
