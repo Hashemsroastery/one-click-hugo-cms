@@ -1,7 +1,7 @@
 ---
-title: "My Custom Name"
+title: "Spices menu"
 menu:
   main:
-    name: "Custom Name"  # What appears in menu
+    name: "Spices menu"  # What appears in menu
     weight: 1            # Position in menu
 ---
