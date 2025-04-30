@@ -9,19 +9,15 @@ intro:
     to quality. From premium coffee beans to authentic spices and gourmet chocolates,
     each product is selected to bring you the best flavors from around the world.
   
-  heading: Coffee beans
-  blurbs:
-    - image: /img/Green coffee.jpg
-      text: >
-        Premium green coffee
-    - image: /img/Black coffee.jpg
-      text: >
-        Premium black roasted coffee
-    - image: /img/Green coffee.jpg
-      text: >
-        Premium green coffee
-    - image: /img/Black coffee.jpg
-      text: >
-        Premium black roasted coffee
-
+sections:
+  - heading: Coffee Beans
+    products:
+      - image: /img/Green-coffee.jpg
+        text: Premium green coffee
+      - image: /img/Black-coffee.jpg
+        text: Premium black roasted coffee
+      - image: /img/Green-coffee.jpg
+        text: Premium green coffee
+      - image: /img/Black-coffee.jpg
+        text: Premium black roasted coffee
 ---
