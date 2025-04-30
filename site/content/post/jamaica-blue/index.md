@@ -1,5 +1,5 @@
 ---
-title: "Under development"
+title: "Latest offers"
 date: 2025-04-29
 draft: false
 ---
