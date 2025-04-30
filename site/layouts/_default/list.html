@@ -4,12 +4,12 @@
 
 <div class="mw7 center">
   <ul id="blog-list" class="flex-ns flex-wrap mhn1-ns pa3">
-      {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
-          <li class="w-50-ns ph1-ns flex">
-            {{ .Render "li"}}
-          </li>
-      {{ end }}
-  </ul>
+  {{ range (where (.Paginator 4).Pages.ByPublishDate.Reverse "Params.hidden" "ne" true) }}
+      <li class="w-50-ns ph1-ns flex">
+        {{ .Render "li"}}
+      </li>
+  {{ end }}
+</ul>
   {{ partial "pagination" . }}
 </div>
 
