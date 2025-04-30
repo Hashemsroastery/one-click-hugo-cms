@@ -14,7 +14,7 @@ export default class ProductsPreview extends React.Component {
               className="db mb2 center br2 shadow-1"
               style={{ width: "100%", maxWidth: "450px", height: "auto" }}
             />
-            <p className="tc f5 lh-copy">{product.get("description")}</p>
+            <p className="tc f4 lh-copy">{product.get("description")}</p>
           </div>
         ))}
       </div>
