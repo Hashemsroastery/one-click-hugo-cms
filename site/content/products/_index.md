@@ -2,56 +2,51 @@
 title: Products
 type: products
 image: /img/Main-product-header.jpg
-intro:
-  heading: What we offer
-  description: >-
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee production,
-    roasting and brewing seriously and we’re glad to pass that knowledge to
-    anyone.
-  blurbs:
-    - image: /img/illustrations-coffee.svg
-      text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/illustrations-coffee-gear.svg
-      text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/illustrations-tutorials.svg
-      text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/illustrations-meeting-space.svg
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
-main:
-  heading: Great coffee with no compromises
-  description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
-  image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
-  image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
-  image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
+
+product_sections:
+  - heading: Featured Coffees
+    products:
+      - image: /img/coffee1.jpg
+        description: Smooth and rich Colombian roast.
+      - image: /img/coffee2.jpg
+        description: Bold Ethiopian beans with citrus notes.
+      - image: /img/coffee3.jpg
+        description: Balanced Brazilian coffee for everyday enjoyment.
+
+  - heading: Brewing Gear
+    products:
+      - image: /img/gear1.jpg
+        description: Stainless steel pour-over kettle.
+      - image: /img/gear2.jpg
+        description: Reusable metal coffee filter.
+      - image: /img/gear3.jpg
+        description: High-precision digital coffee scale.
+
+  - heading: Accessories
+    products:
+      - image: /img/mug1.jpg
+        description: Hand-crafted ceramic coffee mugs.
+      - image: /img/mug2.jpg
+        description: Portable insulated travel cup.
+      - image: /img/mug3.jpg
+        description: Limited edition Kaldi mug.
+
+  - heading: Learning Materials
+    products:
+      - image: /img/book1.jpg
+        description: Coffee brewing techniques 101.
+      - image: /img/book2.jpg
+        description: Sourcing ethical beans - a guide.
+      - image: /img/book3.jpg
+        description: The science of coffee roasting.
+
+  - heading: Gift Packs
+    products:
+      - image: /img/gift1.jpg
+        description: Holiday gift bundle with 3 coffee types.
+      - image: /img/gift2.jpg
+        description: Starter kit for new brewers.
+      - image: /img/gift3.jpg
+        description: Subscription box sampler pack.
 
 ---
