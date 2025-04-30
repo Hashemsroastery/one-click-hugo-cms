@@ -7,8 +7,7 @@ contact_entries:
   - heading: Working hours
     text: "Monday – Sunday: 8:30AM – 7PM<br>Friday: 9AM - 1PM"
   - heading: Contact
-    text: Hassan Hashem
-          +961 3 597784
+    text: "Mohammad Hashem<br>+961 3 295088<br>Hassan Hashem<br>+961 3 597784<br>Ahmad Hashem<br>+961 3 613839"
 ---
 We’d love to get in touch with you and hear your ideas and
 questions. We strive to grow and improve constantly and your feedback
