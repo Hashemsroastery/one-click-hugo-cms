@@ -3,12 +3,12 @@
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
 
 {{ range .Params.product_sections }}
-  <div class="mw7 center ph3 pv5">
-    <h2 class="f2 b mb4 tc">{{ .heading }}</h2>
+  <div class="mw7 center ph3 pv3">
+    <h2 class="f2 b mb3 tc">{{ .heading }}</h2>
     <div class="flex flex-wrap mhn1">
       {{ range .products }}
-        <div class="w-100 w-33-ns ph2 mb5">
-          <img src="{{ .image }}" alt="" class="db mb3 center br2 shadow-1" style="width:100%; max-width:340px;">
+        <div class="w-100 w-33-ns ph2 mb4">
+          <img src="{{ .image }}" alt="" class="db mb2 center br2 shadow-1" style="width:100%; max-width:450px;">
           <p class="tc f5 lh-copy">{{ .description }}</p>
         </div>
       {{ end }}
