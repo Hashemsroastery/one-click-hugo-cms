@@ -1,7 +1,7 @@
 ---
-title: "Spices menu"
+title: "Menu spices"  # Internal title (optional)
 menu:
   main:
-    name: "Spices menu"  # What appears in menu
-    weight: 1            # Position in menu
+    name: "Spices menu"  
+    weight: 3 
 ---
