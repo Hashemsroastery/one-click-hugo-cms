@@ -4,7 +4,7 @@ type: products
 image: /img/Main-product-header.jpg
 
 product_sections:
-  - heading: Featured Coffee Beans
+  - heading: Featured Coffee Beans حبوب القهوة
     products:
       - image: /img/Green coffee.jpg
         description: Green Brazilian coffee beans قهوة برازيلية خضراء
@@ -14,43 +14,37 @@ product_sections:
         description: Brown Brazilian coffee beans قهوة برازيلية بنية
       - image: /img/CBL coffee.jpg
         description: Black Colombian coffee beans قهوة كولومبية سوداء
-      - image: /img/Brown coffee.jpg
-        description: Brown Brazilian coffee beans قهوة برازيلية بنية
+      - image: /img/CBR coffee.jpg
+        description: Brown Colombian coffee beans قهوة كولومبية بنية
         
-  - heading: Brewing Gear
+  - heading: Spices بهارات
     products:
       - image: /img/Green coffee.jpg
         description: Stainless steel pour-over kettle.
-      - image: /img/Green coffee.jpg
-        description: Reusable metal coffee filter.
-      - image: /img/Green coffee.jpg
-        description: High-precision digital coffee scale.
 
-  - heading: Accessories
+  - heading: Herbs أعشاب
     products:
       - image: /img/Green coffee.jpg
         description: Hand-crafted ceramic coffee mugs.
-      - image: /img/Green coffee.jpg
-        description: Portable insulated travel cup.
-      - image: /img/Green coffee.jpg
-        description: Limited edition Kaldi mug.
 
-  - heading: Learning Materials
+  - heading: Seeds بذور
     products:
       - image: /img/Green coffee.jpg
         description: Coffee brewing techniques 101.
-      - image: /img/Green coffee.jpg
-        description: Sourcing ethical beans - a guide.
-      - image: /img/Green coffee.jpg
-        description: The science of coffee roasting.
 
-  - heading: Gift Packs
+  - heading: Raw nuts قلوبات ومكسرات نيئة
     products:
       - image: /img/Green coffee.jpg
         description: Holiday gift bundle with 3 coffee types.
+        
+  - heading: Roasted nuts قلوبات ومكسرات محمّصة
+    products:
       - image: /img/Green coffee.jpg
-        description: Starter kit for new brewers.
+        description: Holiday gift bundle with 3 coffee types.
+         
+  - heading: Other products منتجات أخرى
+    products:
       - image: /img/Green coffee.jpg
-        description: Subscription box sampler pack.
-
+        description: Holiday gift bundle with 3 coffee types.
+        
 ---
