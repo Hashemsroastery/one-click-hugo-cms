@@ -216,20 +216,20 @@ product_sections:
 
   - heading: Seeds بذور
     products:
-      - image: /img/Anise.jpg
-        description: Anise<br>يانسون
-      - image: /img/Star anise.jpg
-        description: Star anise<br>يانسون نجمة
-      - image: /img/Nigella seeds.jpg
-        description: Nigella seeds<br>حبة البركة
-      - image: /img/Fennel.jpg
-        description: Fennel (whole and ground)<br>شومر (حب وناعم)
-      - image: /img/Flax seeds.jpg
-        description: Flax seeds<br>بذر كتان
-      - image: /img/Chia seeds.jpg
-        description: Chia seeds<br>بذر الشيا
+    - image: /img/Anise.jpg
+      description: Anise<br>يانسون
+    - image: /img/Star anise.jpg
+      description: Star anise<br>يانسون نجمة
+    - image: /img/Nigella seeds.jpg
+      description: Nigella seeds<br>حبة البركة
+    - image: /img/Fennel.jpg
+      description: Fennel (whole and ground)<br>شومر (حب وناعم)
+    - image: /img/Flax seeds.jpg
+      description: Flax seeds<br>بذر كتان
+    - image: /img/Chia seeds.jpg
+      description: Chia seeds<br>بذر الشيا
     - image: /img/Oat seeds.jpg
-        description: Oat seeds<br>بذر الشوفان
+      description: Oat seeds<br>بذر الشوفان
 
   - heading: Raw nuts قلوبات ومكسرات نيئة
     products:
@@ -288,7 +288,7 @@ product_sections:
     - image: /img/Qamar Al Din.jpg
       description: Qamar Al-Din<br>قمر الدين
          
-- heading: Dates تمور
+  - heading: Dates تمور
     products:
     - image: /img/Medjool dates.jpg
       description: Medjool Dates<br>تمر مدجول
@@ -305,7 +305,7 @@ product_sections:
 
   - heading: Other products منتجات أخرى
     products:
-      - image: /img/Green coffee.jpg
-        description: Holiday gift bundle with 3 coffee types.
+    - image: /img/Green coffee.jpg
+      description: Holiday gift bundle with 3 coffee types.
         
 ---
