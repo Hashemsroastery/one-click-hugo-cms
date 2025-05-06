@@ -4,10 +4,10 @@ type: products
 image: /img/Main-product-header.jpg
 
 product_sections:
-  - heading: Featured Coffees
+  - heading: Featured Coffee Beans
     products:
       - image: /img/Green coffee.jpg
-        description: Smooth and rich Colombian roast.
+        description: Green coffee قهوة خضراء.
       - image: /img/Green coffee.jpg
         description: Bold Ethiopian beans with citrus notes.
       - image: /img/Green coffee.jpg
