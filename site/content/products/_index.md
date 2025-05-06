@@ -9,10 +9,14 @@ product_sections:
       - image: /img/Green coffee.jpg
         description: Green Brazilian coffee beans قهوة برازيلية خضراء
       - image: /img/Black coffee.jpg
-        description: Black brazilian coffee beans قهوة برازيلية سوداء
+        description: Black Brazilian coffee beans قهوة برازيلية سوداء
       - image: /img/Brown coffee.jpg
-        description: Brown brazilian coffee beans قهوة برازيلية بنية
-
+        description: Brown Brazilian coffee beans قهوة برازيلية بنية
+      - image: /img/CBL coffee.jpg
+        description: Black Colombian coffee beans قهوة كولومبية سوداء
+      - image: /img/Brown coffee.jpg
+        description: Brown Brazilian coffee beans قهوة برازيلية بنية
+        
   - heading: Brewing Gear
     products:
       - image: /img/Green coffee.jpg
