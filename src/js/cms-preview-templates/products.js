@@ -10,10 +10,15 @@ export default class ProductsPreview extends React.Component {
           <div className="w-100 w-33-ns ph2 mb4" key={i}>
             <img
               src={getAsset(product.get("image"))}
-              alt=""
-              className="db mb2 center br2 shadow-1"
-              style={{ width: "100%", maxWidth: "450px", height: "auto" }}
-            />
+                alt=""
+                className="db mb2 center br2 shadow-1"
+                style={{
+                  width: "100%",
+                  maxWidth: "450px",
+                  height: "350px",
+                  objectFit: "cover",
+                }}
+              />
             <p className="tc f4 lh-copy">{product.get("description")}</p>
           </div>
         ))}
