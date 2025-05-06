@@ -7,16 +7,21 @@ product_sections:
   - heading: Featured Coffee Beans حبوب القهوة
     products:
       - image: /img/Green coffee.jpg
-        description: Green Brazilian coffee beans قهوة برازيلية خضراء
+        description: Green Brazilian coffee beans<br>قهوة برازيلية خضراء
       - image: /img/Black coffee.jpg
-        description: Black Brazilian coffee beans قهوة برازيلية سوداء
+        description: Black Brazilian coffee beans<br>قهوة برازيلية سوداء
       - image: /img/Brown coffee.jpg
-        description: Brown Brazilian coffee beans قهوة برازيلية بنية
+        description: Brown Brazilian coffee beans<br>قهوة برازيلية بنية
       - image: /img/CBL coffee.jpg
-        description: Black Colombian coffee beans قهوة كولومبية سوداء
+        description: Black Colombian coffee beans<br>قهوة كولومبية سوداء
       - image: /img/CBR coffee.jpg
-        description: Brown Colombian coffee beans قهوة كولومبية بنية
-        
+        description: Brown Colombian coffee beans<br>قهوة كولومبية بنية
+
+  - heading: Baladi products منتجات بلدية
+    products:
+      - image: /img/Kamoune.jpg
+        description: Fresh Kamoune (Whole and ground)<br>كمونة بلدية (حب ومطحون)
+      
   - heading: Spices بهارات
     products:
       - image: /img/Green coffee.jpg
