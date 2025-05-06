@@ -7,11 +7,11 @@ product_sections:
   - heading: Featured Coffee Beans
     products:
       - image: /img/Green coffee.jpg
-        description: Green coffee قهوة خضراء.
-      - image: /img/Green coffee.jpg
-        description: Bold Ethiopian beans with citrus notes.
-      - image: /img/Green coffee.jpg
-        description: Balanced Brazilian coffee for everyday enjoyment.
+        description: Green Brazilian coffee beans قهوة برازيلية خضراء
+      - image: /img/Black coffee.jpg
+        description: Black brazilian coffee beans قهوة برازيلية سوداء
+      - image: /img/Brown coffee.jpg
+        description: Brown brazilian coffee beans قهوة برازيلية بنية
 
   - heading: Brewing Gear
     products:
