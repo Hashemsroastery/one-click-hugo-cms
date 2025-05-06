@@ -142,7 +142,7 @@ product_sections:
       description: Potato spice<br>بهار بطاطا
     - image: /img/Falafel.jpg
       description: Falafel<br>فلافل
-  - image: /img/Maghrabiya.jpg
+    - image: /img/Maghrabiya.jpg
       description: Maghrabiya spice mix<br>بهارات مغربية
     - image: /img/Mandi.jpg
       description: Mandi spice mix<br>بهارات مندي
