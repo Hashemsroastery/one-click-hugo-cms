@@ -61,13 +61,54 @@ export default class ProductsPreview extends React.Component {
 
     return (
       <div className="bg-light-gray ph3 pv2 sticky top-0 z-1 shadow-1">
+        <style jsx>{`
+          .nav-btn {
+            background-color: #6F4E37;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 12px;
+            margin: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+          }
+          .nav-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            z-index: 10;
+          }
+          .nav-btn::after {
+            content: attr(data-fullname);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #6F4E37;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            white-space: nowrap;
+            margin-bottom: 5px;
+          }
+          .nav-btn:hover::after {
+            opacity: 1;
+          }
+        `}</style>
+        
         <div className="mw7 center">
           <div className="flex flex-wrap justify-center">
             {productSections.map((section, index) => (
               <button
                 onClick={() => scrollToSection(section.get("heading"))}
-                className="f5 no-underline dib ph3 pv2 ma1 bg-white hover-bg-light-blue hover-white br2 pointer bn shadow-1"
+                className="nav-btn f5"
                 key={index}
+                data-fullname={section.get("heading")}
               >
                 {getShortName(section.get("heading"))}
               </button>
