@@ -186,7 +186,7 @@ product_sections:
     products:
       - image: /img/Chamomile.jpg
         description: Chamomile<br>بابونج
-      - image: /img/Herbal tea.jpg
+      - image: /img/Herbal tea mix.jpg
         description: Herbal tea mix<br>زهورات
       - image: /img/Rose petals.jpg
         description: Rose petals<br>ورد
@@ -200,7 +200,7 @@ product_sections:
         description: Bay leaf<br>ورق غار
       - image: /img/Dried lime.jpg
         description: Dried lime<br>حامض لومي
-      - image: /img/Green_tea.jpg
+      - image: /img/Green tea.jpg
         description: Green tea<br>شاي أخضر
       - image: /img/Enchanters nightshade.jpg
         description: Enchanter's nightshade<br>عشرق
