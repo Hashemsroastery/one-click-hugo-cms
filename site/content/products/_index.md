@@ -371,6 +371,8 @@ product_sections:
         description: Soqai Dates<br>تمر الصقعي
       - image: /img/Ajwa dates.jpg
         description: Ajwa Dates (Prophet's Dates)<br>تمر عجوة الرسول
+      - image: /img/Rotab.jpg
+        description: Rotab Dates<br>تمر رطب
 
   - heading: Premium Chocolate شوكولاتة فاخرة
     products:
