@@ -86,49 +86,51 @@ product_sections:
       - image: /img/Kabsa.jpg
         description: Kabsa<br>كبسة
       - image: /img/Caraway whole.jpg
-        description: Caraway (whole)<br>كراوية حب
+        description: Caraway (whole)<br>كراوية (حب)
       - image: /img/Caraway ground.jpg
-        description: Caraway (ground)<br>كراوية ناعم
+        description: Caraway (ground)<br>كراوية (ناعم)
       - image: /img/Kozbara whole.jpg
-        description: Coriander (whole)<br>كزبرة حب
+        description: Coriander (whole)<br>كزبرة (حب)
       - image: /img/Kozbara ground.jpg
-        description: Coriander (ground)<br>كزبرة ناعم
+        description: Coriander (ground)<br>كزبرة (ناعم)
       - image: /img/Red chili fine.jpg
-        description: Red chili (fine)<br>حر أحمر ناعم
+        description: Red chili (fine)<br>حر أحمر (ناعم)
       - image: /img/Red chili coarse.jpg
-        description: Red chili (coarse)<br>حر أحمر خشن
+        description: Red chili (coarse)<br>حر أحمر (خشن)
       - image: /img/Paprika_fine.jpg
-        description: Paprika (fine)<br>بابريكا ناعم
+        description: Paprika (fine)<br>بابريكا (ناعم)
       - image: /img/Paprika coarse.jpg
-        description: Paprika (coarse)<br>بابريكا خشن
+        description: Paprika (coarse)<br>بابريكا (خشن)
       - image: /img/Ginger whole.jpg
-        description: Ginger (whole)<br>زنجبيل حب
+        description: Ginger (whole)<br>زنجبيل (حب)
       - image: /img/Ginger ground.jpg
-        description: Ginger (ground)<br>زنجبيل ناعم
+        description: Ginger (ground)<br>زنجبيل (ناعم)
       - image: /img/Alpinia whole.jpg
-        description: Alpinia (whole)<br>خولنجان حب
+        description: Alpinia (whole)<br>خولنجان (حب)
       - image: /img/Alpinia ground.jpg
-        description: Alpinia (ground)<br>خولنجان ناعم
+        description: Alpinia (ground)<br>خولنجان (ناعم)
       - image: /img/Cloves whole.jpg
-        description: Cloves (whole)<br>قرنفل حب
+        description: Cloves (whole)<br>قرنفل (حب)
       - image: /img/Cloves ground.jpg
-        description: Cloves (ground)<br>قرنفل ناعم
+        description: Cloves (ground)<br>قرنفل (ناعم)
       - image: /img/Cardamom whole.jpg
-        description: Cardamom (whole)<br>هيل حب
+        description: Cardamom (whole)<br>هيل (حب)
       - image: /img/Cardamom ground.jpg
-        description: Cardamom (ground)<br>هيل ناعم
+        description: Cardamom (ground)<br>هيل (ناعم)
       - image: /img/Nutmeg whole.jpg
-        description: Nutmeg (whole)<br>جوزة الطيب حب
+        description: Nutmeg (whole)<br>جوزة الطيب (حب)
       - image: /img/Nutmeg ground.jpg
-        description: Nutmeg (ground)<br>جوزة الطيب ناعم
+        description: Nutmeg (ground)<br>جوزة الطيب (ناعم)
       - image: /img/Maggi.jpg
         description: Maggi<br>ماجي
       - image: /img/Ground garlic.jpg
         description: Ground garlic<br>ثوم ناعم
       - image: /img/Ground onion.jpg
         description: Ground onion<br>بصل ناعم
-      - image: /img/Chicken spice.jpg
-        description: Red and white chicken spice<br>طاووق أحمر وأبيض
+      - image: /img/White tawook spice.jpg
+        description: White Tawook spice<br>طاووق أبيض
+      - image: /img/Red tawook spice.jpg
+        description: Red Tawook spice<br>طاووق أحمر 
       - image: /img/Crispy.jpg
         description: Crispy<br>كرسبي
       - image: /img/Scallop.jpg
@@ -161,12 +163,16 @@ product_sections:
         description: Daqqat Al-Nafsa<br>دقة النفسا
       - image: /img/Pizza spice.jpg
         description: Pizza spice mix<br>بهارات بيتزا
-      - image: /img/Mahlab.jpg
-        description: Mahlab (whole and ground)<br>محلب (حب وناعم)
+      - image: /img/Mahlab whole.jpg
+        description: Mahlab (whole)<br>محلب (حب)
+      - image: /img/Mahlab ground.jpg
+        description: Mahlab (ground)<br>محلب (ناعم)
       - image: /img/Chinese salt.jpg
         description: Chinese salt<br>ملح صيني
-      - image: /img/Turmeric.jpg
-        description: Turmeric (whole and ground)<br>كركم (حب وناعم)
+      - image: /img/Turmeric whole.jpg
+        description: Turmeric (whole)<br>كركم أو عقدة صفراء (حب)
+      - image: /img/Turmeric ground.jpg
+        description: Turmeric (ground)<br>كركم أو عقدة صفراء (ناعم)
       - image: /img/Fattoush.jpg
         description: Fattoush salad spices<br>بهارات فتوش
       - image: /img/Safflower.jpg
