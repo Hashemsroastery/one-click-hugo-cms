@@ -18,7 +18,7 @@ product_sections:
       - image: /img/CBR coffee.jpg
         description: Brown Colombian coffee beans<br>قهوة كولومبية بنية
 
-  - heading: Baladi products منتجات بلدية
+  - heading: Baladi Products منتجات بلدية
     products:
       - image: /img/Kamoune whole.jpg
         description: Fresh Kamoune (whole)<br>كمونة بلدية (حب)
@@ -232,7 +232,7 @@ product_sections:
       - image: /img/Oat seeds.jpg
         description: Oat seeds<br>بذر الشوفان
 
-  - heading: Raw nuts قلوبات ومكسرات نيئة
+  - heading: Raw Nuts قلوبات ومكسرات نيئة
     products:
       - image: /img/Blanched almonds.jpg
         description: Blanched Almonds<br>لوز مقشور
@@ -263,7 +263,7 @@ product_sections:
       - image: /img/Baladi pinenuts.jpg
         description: Baladi Pinenuts<br>صنوبر بلدي
         
-  - heading: Roasted nuts قلوبات ومكسرات محمّصة
+  - heading: Roasted Nuts قلوبات ومكسرات محمّصة
     products:
       - image: /img/mixed super premium nuts.jpg
         description: Mixed Super Premium Nuts<br>قلوبات سوبر اكسترا 
@@ -326,7 +326,7 @@ product_sections:
       - image: /img/white salted hard chickpeas.jpg
         description: White Salted Hard Chickpeas<br>حمص أبيض مملح مقرمش
 
-  - heading: Dried fruits فواكه مجففة
+  - heading: Dried Fruits فواكه مجففة
     products:
       - image: /img/Small Iranian raisins.jpg
         description: Small Iranian Raisins<br>زبيب إيراني حبة صغيرة
@@ -381,7 +381,7 @@ product_sections:
       - image: /img/Gifts.jpg
         description: Gifts<br>هدايا
 
-  - heading: Other products منتجات أخرى
+  - heading: Other Products منتجات أخرى
     products:
       - image: /img/Gummies.jpg
         description: Gummies halal<br>غاميز حلال
