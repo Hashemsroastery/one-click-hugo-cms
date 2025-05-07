@@ -2,6 +2,7 @@
 title: Products
 type: products
 image: /img/Main-product-header.jpg
+navigation_panel: true
 
 product_sections:
   - heading: Featured Coffee Beans حبوب القهوة
