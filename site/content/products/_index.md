@@ -364,13 +364,17 @@ product_sections:
 
   - heading: Premium Chocolate شوكولاتة فاخرة
     products:
-      - image: /img/Medjool dates.jpg
-        description: Medjool Dates<br>تمر مدجول
-
+      - image: /img/Premium chocolate.jpg
+        description: Premium Chocolate<br>شوكولاتة فاخرة
+      - image: /img/Super premium chocolate.jpg
+        description: Super Premium Chocolate<br>شوكولاتة فاخرة سوبر
+        
   - heading: Premium Malban ملابن فاخرة
     products:
-      - image: /img/Medjool dates.jpg
-        description: Medjool Dates<br>تمر مدجول
+      - image: /img/Malban super Extra.jpg
+        description: Malban Super Extra<br>ملبن سوبر اكسترا
+      - image: /img/Malban Extra.jpg
+        description: Malban extra<br>ملبن اكسترا
 
   - heading: Other products منتجات أخرى
     products:
