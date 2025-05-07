@@ -217,19 +217,19 @@ product_sections:
   - heading: Seeds بذور
     products:
     - image: /img/Anise.jpg
-        description: Anise<br>يانسون
+      description: Anise<br>يانسون
     - image: /img/Star anise.jpg
-        description: Star anise<br>يانسون نجمة
+      description: Star anise<br>يانسون نجمة
     - image: /img/Nigella seeds.jpg
-        description: Nigella seeds<br>حبة البركة
+      description: Nigella seeds<br>حبة البركة
     - image: /img/Fennel.jpg
-        description: Fennel (whole and ground)<br>شومر (حب وناعم)
+      description: Fennel (whole and ground)<br>شومر (حب وناعم)
     - image: /img/Flax seeds.jpg
-        description: Flax seeds<br>بذر كتان
+      description: Flax seeds<br>بذر كتان
     - image: /img/Chia seeds.jpg
-        description: Chia seeds<br>بذر الشيا
+      description: Chia seeds<br>بذر الشيا
     - image: /img/Oat seeds.jpg
-        description: Oat seeds<br>بذر الشوفان
+      description: Oat seeds<br>بذر الشوفان
 
   - heading: Raw nuts قلوبات ومكسرات نيئة
     products:
