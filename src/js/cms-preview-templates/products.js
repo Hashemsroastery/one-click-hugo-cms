@@ -26,6 +26,30 @@ export default class ProductsPreview extends React.Component {
     </div>
   );
 
+  getDisplayName = (heading) => {
+    if (heading.includes("Featured Coffee Beans")) return "Coffee";
+    if (heading.includes("حبوب القهوة")) return "قهوة";
+    if (heading.includes("Baladi products")) return "Baladi";
+    if (heading.includes("منتجات بلدية")) return "بلدية";
+    if (heading.includes("Spices")) return "Spices";
+    if (heading.includes("بهارات")) return "بهارات";
+    if (heading.includes("Herbs")) return "Herbs";
+    if (heading.includes("أعشاب")) return "أعشاب";
+    if (heading.includes("Seeds")) return "Seeds";
+    if (heading.includes("بذور")) return "بذور";
+    if (heading.includes("Raw nuts")) return "Raw Nuts";
+    if (heading.includes("Roasted nuts")) return "Roasted Nuts";
+    if (heading.includes("Dried fruits")) return "Dried Fruits";
+    if (heading.includes("فواكه مجففة")) return "فواكه";
+    if (heading.includes("Dates")) return "Dates";
+    if (heading.includes("تمور")) return "تمور";
+    if (heading.includes("Premium Chocolate")) return "Chocolate";
+    if (heading.includes("Premium Malban")) return "Malban";
+    if (heading.includes("Other products")) return "Others";
+    if (heading.includes("منتجات أخرى")) return "أخرى";
+    return heading.split(" ")[0]; // Fallback to first word
+  };
+
   renderNavigationPanel = (productSections) => {
     const scrollToSection = (heading) => {
       const id = heading.replace(/[^\w\s]/gi, '').replace(/\s+/g, '-').toLowerCase();
@@ -35,52 +59,48 @@ export default class ProductsPreview extends React.Component {
       }
     };
 
-    const getShortName = (heading) => {
-      return heading
-        .replace("Featured Coffee Beans", "Coffee")
-        .replace("حبوب القهوة", "قهوة")
-        .replace("Baladi products", "Baladi")
-        .replace("منتجات بلدية", "بلدية")
-        .replace("Spices", "Spices")
-        .replace("بهارات", "بهارات")
-        .replace("Herbs", "Herbs")
-        .replace("أعشاب", "أعشاب")
-        .replace("Seeds", "Seeds")
-        .replace("بذور", "بذور")
-        .replace("Raw nuts", "Raw Nuts")
-        .replace("Roasted nuts", "Roasted Nuts")
-        .replace("Dried fruits", "Dried Fruits")
-        .replace("فواكه مجففة", "فواكه")
-        .replace("Dates", "Dates")
-        .replace("تمور", "تمور")
-        .replace("Premium Chocolate", "Chocolate")
-        .replace("Premium Malban", "Malban")
-        .replace("Other products", "Others")
-        .replace("منتجات أخرى", "أخرى");
-    };
-
     return (
-      <div className="bg-light-gray ph3 pv2 sticky top-0 z-1 shadow-1">
+      <div className="nav-panel">
         <style jsx>{`
+          .nav-panel {
+            background-color: #f5f5f5;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+          }
+          .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+          }
+          .nav-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+          }
           .nav-btn {
             background-color: #6F4E37;
             color: white;
             border: none;
             border-radius: 4px;
             padding: 8px 12px;
-            margin: 4px;
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             position: relative;
-            overflow: hidden;
+            overflow: visible;
+            white-space: nowrap;
+            font-size: 0.9rem;
           }
           .nav-btn:hover {
             transform: translateY(-3px) scale(1.05);
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             z-index: 10;
           }
-          .nav-btn::after {
+          .nav-btn[data-fullname]:hover::before {
             content: attr(data-fullname);
             position: absolute;
             bottom: 100%;
@@ -88,29 +108,25 @@ export default class ProductsPreview extends React.Component {
             transform: translateX(-50%);
             background: #6F4E37;
             color: white;
-            padding: 4px 8px;
+            padding: 6px 10px;
             border-radius: 4px;
-            font-size: 14px;
-            opacity: 0;
-            transition: opacity 0.3s;
+            font-size: 0.9rem;
             white-space: nowrap;
-            margin-bottom: 5px;
-          }
-          .nav-btn:hover::after {
-            opacity: 1;
+            margin-bottom: 8px;
+            pointer-events: none;
           }
         `}</style>
         
-        <div className="mw7 center">
-          <div className="flex flex-wrap justify-center">
+        <div className="nav-container">
+          <div className="nav-buttons">
             {productSections.map((section, index) => (
               <button
                 onClick={() => scrollToSection(section.get("heading"))}
-                className="nav-btn f5"
+                className="nav-btn"
                 key={index}
                 data-fullname={section.get("heading")}
               >
-                {getShortName(section.get("heading"))}
+                {this.getDisplayName(section.get("heading"))}
               </button>
             ))}
           </div>
