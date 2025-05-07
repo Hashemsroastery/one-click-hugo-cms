@@ -49,11 +49,13 @@ export default class ProductsPreview extends React.Component {
             transition: all 0.3s ease;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             position: relative;
-            overflow: visible;
-            white-space: nowrap;
+            overflow: visible; /* Changed */
+            white-space: normal; /* Changed */
+            text-overflow: clip; /* Added */
             font-size: 0.9rem;
             width: 100%;
             text-align: left;
+            word-break: break-word; /* Added */
           }
           .nav-btn:hover {
             transform: translateX(5px) scale(1.02);
