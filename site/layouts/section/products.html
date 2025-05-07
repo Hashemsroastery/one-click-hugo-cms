@@ -3,13 +3,17 @@
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
 
 {{ if .Params.navigation_panel }}
-<div class="mw7 center ph3 pt4 pb2 sticky top-0 bg-white z-1 shadow-1">
-  <div class="overflow-x-auto">
-    <div class="flex nowrap pb2">
+<div class="bg-light-gray ph3 pv2 sticky top-0 z-1 shadow-1">
+  <div class="mw7 center">
+    <div class="flex flex-wrap justify-center">
       {{ range .Params.product_sections }}
-        <a href="#{{ .heading | anchorize }}" class="f5 no-underline dib ph3 pv2 mr2 bg-light-gray hover-bg-light-blue hover-white br2" onclick="event.preventDefault(); document.getElementById('{{ .heading | anchorize }}').scrollIntoView({ behavior: 'smooth' });">
-          {{ .heading }}
-        </a>
+        {{ $shortName := replace .heading "products" "" | replace "منتجات" "" | truncate 15 }}
+        <button 
+          onclick="event.preventDefault(); document.getElementById('{{ .heading | anchorize }}').scrollIntoView({ behavior: 'smooth' });"
+          class="f5 no-underline dib ph3 pv2 ma1 bg-white hover-bg-light-blue hover-white br2 pointer bn shadow-1"
+        >
+          {{ $shortName }}
+        </button>
       {{ end }}
     </div>
   </div>
