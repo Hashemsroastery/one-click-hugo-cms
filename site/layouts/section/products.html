@@ -7,7 +7,7 @@
   <div class="overflow-x-auto">
     <div class="flex nowrap pb2">
       {{ range .Params.product_sections }}
-        <a href="#{{ .heading | urlize }}" class="f5 no-underline dib ph3 pv2 mr2 bg-light-gray hover-bg-light-blue hover-white br2">
+        <a href="#{{ .heading | anchorize }}" class="f5 no-underline dib ph3 pv2 mr2 bg-light-gray hover-bg-light-blue hover-white br2" onclick="event.preventDefault(); document.getElementById('{{ .heading | anchorize }}').scrollIntoView({ behavior: 'smooth' });">
           {{ .heading }}
         </a>
       {{ end }}
@@ -17,7 +17,7 @@
 {{ end }}
 
 {{ range .Params.product_sections }}
-  <div class="mw7 center ph3 pv3" id="{{ .heading | urlize }}">
+  <div class="mw7 center ph3 pv3" id="{{ .heading | anchorize }}">
     <h2 class="f2 b mb3 tc">{{ .heading }}</h2>
     <div class="flex flex-wrap mhn1">
       {{ range .products }}
