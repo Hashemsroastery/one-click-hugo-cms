@@ -346,7 +346,7 @@ product_sections:
       - image: /img/Qamar Al Din.jpg
         description: Qamar Al-Din<br>قمر الدين
          
-- heading: Dates تمور
+  - heading: Dates تمور
     products:
       - image: /img/Medjool dates.jpg
         description: Medjool Dates<br>تمر مدجول
@@ -361,18 +361,18 @@ product_sections:
       - image: /img/Ajwa dates.jpg
         description: Ajwa Dates (Prophet's Dates)<br>تمر عجوة الرسول
 
-- heading: Premium Chocolate شوكولاتة فاخرة
+  - heading: Premium Chocolate شوكولاتة فاخرة
     products:
       - image: /img/Medjool dates.jpg
         description: Medjool Dates<br>تمر مدجول
 
-- heading: Premium Malban ملابن فاخرة
+  - heading: Premium Malban ملابن فاخرة
     products:
       - image: /img/Medjool dates.jpg
         description: Medjool Dates<br>تمر مدجول
 
-- heading: Other products منتجات أخرى
-   products:
+  - heading: Other products منتجات أخرى
+    products:
       - image: /img/Gummies.jpg
         description: Gummies halal<br>غاميز حلال
       - image: /img/Candies.jpg
