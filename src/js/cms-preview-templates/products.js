@@ -82,8 +82,8 @@ export default class ProductsPreview extends React.Component {
             padding: 20px 10px;
             position: fixed;
             left: 0;
-            top: 120px;
-            height: calc(100vh - 120px);
+            top: 280px; /* Increased to appear below title/cover */
+            height: calc(100vh - 280px); /* Adjusted to match */
             width: 180px;
             z-index: 100;
             overflow-y: auto;
@@ -140,8 +140,8 @@ export default class ProductsPreview extends React.Component {
           @media (max-width: 768px) {
             .nav-panel {
               width: 150px;
-              top: 100px;
-              height: calc(100vh - 100px);
+              top: 220px; /* Adjusted for mobile */
+              height: calc(100vh - 220px); /* Adjusted to match */
             }
             .content-with-nav {
               margin-left: 170px;
