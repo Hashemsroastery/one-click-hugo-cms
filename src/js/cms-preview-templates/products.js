@@ -26,30 +26,6 @@ export default class ProductsPreview extends React.Component {
     </div>
   );
 
-  getDisplayName = (heading) => {
-    if (heading.includes("Featured Coffee Beans")) return "Coffee";
-    if (heading.includes("حبوب القهوة")) return "قهوة";
-    if (heading.includes("Baladi products")) return "Baladi";
-    if (heading.includes("منتجات بلدية")) return "بلدية";
-    if (heading.includes("Spices")) return "Spices";
-    if (heading.includes("بهارات")) return "بهارات";
-    if (heading.includes("Herbs")) return "Herbs";
-    if (heading.includes("أعشاب")) return "أعشاب";
-    if (heading.includes("Seeds")) return "Seeds";
-    if (heading.includes("بذور")) return "بذور";
-    if (heading.includes("Raw nuts")) return "Raw Nuts";
-    if (heading.includes("Roasted nuts")) return "Roasted Nuts";
-    if (heading.includes("Dried fruits")) return "Dried Fruits";
-    if (heading.includes("فواكه مجففة")) return "فواكه";
-    if (heading.includes("Dates")) return "Dates";
-    if (heading.includes("تمور")) return "تمور";
-    if (heading.includes("Premium Chocolate")) return "Chocolate";
-    if (heading.includes("Premium Malban")) return "Malban";
-    if (heading.includes("Other products")) return "Others";
-    if (heading.includes("منتجات أخرى")) return "أخرى";
-    return heading.split(" ")[0]; // Fallback to first word
-  };
-
   renderNavigationPanel = (productSections) => {
     const scrollToSection = (heading) => {
       const id = heading.replace(/[^\w\s]/gi, '').replace(/\s+/g, '-').toLowerCase();
@@ -84,7 +60,7 @@ export default class ProductsPreview extends React.Component {
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             z-index: 10;
           }
-          .nav-btn[data-fullname]:hover::before {
+          .nav-btn[data-fullname]:hover::after {
             content: attr(data-fullname);
             position: absolute;
             left: 100%;
@@ -98,14 +74,15 @@ export default class ProductsPreview extends React.Component {
             white-space: nowrap;
             margin-left: 8px;
             pointer-events: none;
+            z-index: 100;
           }
           .nav-panel {
             background-color: #f5f5f5;
             padding: 20px 10px;
             position: fixed;
             left: 0;
-            top: 0;
-            height: 100vh;
+            top: 120px; /* Adjusted to be below the header image */
+            height: calc(100vh - 120px); /* Adjusted height */
             width: 180px;
             z-index: 100;
             box-shadow: 2px 0 5px rgba(0,0,0,0.1);
@@ -122,6 +99,8 @@ export default class ProductsPreview extends React.Component {
           @media (max-width: 768px) {
             .nav-panel {
               width: 150px;
+              top: 100px; /* Adjusted for mobile */
+              height: calc(100vh - 100px); /* Adjusted for mobile */
             }
             .content-with-nav {
               margin-left: 170px;
@@ -137,7 +116,7 @@ export default class ProductsPreview extends React.Component {
               key={index}
               data-fullname={section.get("heading")}
             >
-              {this.getDisplayName(section.get("heading"))}
+              {section.get("heading")}
             </button>
           ))}
         </div>
