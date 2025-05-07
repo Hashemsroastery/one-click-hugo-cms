@@ -26,7 +26,7 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     z-index: 10;
   }
-  .nav-btn[data-fullname]:hover::before {
+  .nav-btn[data-fullname]:hover::after {
     content: attr(data-fullname);
     position: absolute;
     left: 100%;
@@ -40,14 +40,15 @@
     white-space: nowrap;
     margin-left: 8px;
     pointer-events: none;
+    z-index: 100;
   }
   .nav-panel {
     background-color: #f5f5f5;
     padding: 20px 10px;
     position: fixed;
     left: 0;
-    top: 0;
-    height: 100vh;
+    top: 120px; /* Adjusted to be below the header image */
+    height: calc(100vh - 120px); /* Adjusted height */
     width: 180px;
     z-index: 100;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
@@ -64,6 +65,8 @@
   @media (max-width: 768px) {
     .nav-panel {
       width: 150px;
+      top: 100px; /* Adjusted for mobile */
+      height: calc(100vh - 100px); /* Adjusted for mobile */
     }
     .content-with-nav {
       margin-left: 170px;
@@ -74,21 +77,12 @@
 <div class="nav-panel">
   <div class="nav-buttons">
     {{ range .Params.product_sections }}
-      {{ $displayName := .heading }}
-      {{ if strings.Contains $displayName "Featured Coffee Beans" }}{{ $displayName = "Coffee" }}{{ end }}
-      {{ if strings.Contains $displayName "حبوب القهوة" }}{{ $displayName = "قهوة" }}{{ end }}
-      {{ if strings.Contains $displayName "Baladi products" }}{{ $displayName = "Baladi" }}{{ end }}
-      {{ if strings.Contains $displayName "منتجات بلدية" }}{{ $displayName = "بلدية" }}{{ end }}
-      {{ if strings.Contains $displayName "Spices" }}{{ $displayName = "Spices" }}{{ end }}
-      {{ if strings.Contains $displayName "بهارات" }}{{ $displayName = "بهارات" }}{{ end }}
-      <!-- Add more replacements as needed -->
-      
       <button 
         onclick="event.preventDefault(); document.getElementById('{{ .heading | anchorize }}').scrollIntoView({ behavior: 'smooth' });"
         class="nav-btn"
         data-fullname="{{ .heading }}"
       >
-        {{ $displayName }}
+        {{ .heading }}
       </button>
     {{ end }}
   </div>
