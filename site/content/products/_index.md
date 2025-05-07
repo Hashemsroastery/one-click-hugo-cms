@@ -142,7 +142,7 @@ product_sections:
       description: Potato spice<br>بهار بطاطا
     - image: /img/Falafel.jpg
       description: Falafel<br>فلافل
-    - image: /img/Maghrabiya.jpg
+  - image: /img/Maghrabiya.jpg
       description: Maghrabiya spice mix<br>بهارات مغربية
     - image: /img/Mandi.jpg
       description: Mandi spice mix<br>بهارات مندي
@@ -216,20 +216,20 @@ product_sections:
 
   - heading: Seeds بذور
     products:
-    - image: /img/Anise.jpg
-      description: Anise<br>يانسون
-    - image: /img/Star anise.jpg
-      description: Star anise<br>يانسون نجمة
-    - image: /img/Nigella seeds.jpg
-      description: Nigella seeds<br>حبة البركة
-    - image: /img/Fennel.jpg
-      description: Fennel (whole and ground)<br>شومر (حب وناعم)
-    - image: /img/Flax seeds.jpg
-      description: Flax seeds<br>بذر كتان
-    - image: /img/Chia seeds.jpg
-      description: Chia seeds<br>بذر الشيا
+      - image: /img/Anise.jpg
+        description: Anise<br>يانسون
+      - image: /img/Star anise.jpg
+        description: Star anise<br>يانسون نجمة
+      - image: /img/Nigella seeds.jpg
+        description: Nigella seeds<br>حبة البركة
+      - image: /img/Fennel.jpg
+        description: Fennel (whole and ground)<br>شومر (حب وناعم)
+      - image: /img/Flax seeds.jpg
+        description: Flax seeds<br>بذر كتان
+      - image: /img/Chia seeds.jpg
+        description: Chia seeds<br>بذر الشيا
     - image: /img/Oat seeds.jpg
-      description: Oat seeds<br>بذر الشوفان
+        description: Oat seeds<br>بذر الشوفان
 
   - heading: Raw nuts قلوبات ومكسرات نيئة
     products:
@@ -264,12 +264,70 @@ product_sections:
         
   - heading: Roasted nuts قلوبات ومكسرات محمّصة
     products:
-      - image: /img/Green coffee.jpg
-        description: Holiday gift bundle with 3 coffee types.
+    - image: /img/mixed super premium nuts.jpg
+      description: Mixed Super Premium Nuts<br>قلوبات سوبر اكسترا 
+    - image: /img/salted jumbo cashews.jpg
+      description: Salted Jumbo Cashews<br>كاجو مملح
+    - image: /img/smoked jumbo cashews.jpg
+      description: Smoked Jumbo Cashews<br>كاجو مدخن
+    - image: /img/salted almonds.jpg
+      description: Salted Almonds<br>لوز مملح
+    - image: /img/smoked almonds.jpg
+      description: Smoked Almonds<br>لوز مدخن
+    - image: /img/plain almonds.jpg
+      description: Plain Almonds<br>لوز عادي
+    - image: /img/plain hazelnuts.jpg
+      description: Plain Hazelnuts<br>بندق عادي
+    - image: /img/salted pistachios.jpg
+      description: Salted Pistachios<br>فستق حلبي مملح
+    - image: /img/plain pistachios.jpg
+      description: Plain Pistachios<br>فستق حلبي عادي
+    - image: /img/plain peanuts.jpg
+      description: Plain Peanuts<br>فول سوداني عادي
+    - image: /img/salted peanuts.jpg
+      description: Salted Peanuts<br>فول سوداني مملح
+    - image: /img/smoked peanuts.jpg
+      description: Smoked Peanuts<br>فول سوداني مدخن
+    - image: /img/fried peanuts.jpg
+      description: Fried Peanuts<br>فول سوداني مقلي
+    - image: /img/salted corn nuts.jpg
+      description: Salted Corn Nuts<br>ذرة محمصة مملحة
+    - image: /img/cheddar cheese corn nuts.jpg
+      description: Cheddar Cheese Corn Nuts<br>ذرة محمصة بنكهة الجبن
+    - image: /img/chinese mix.jpg
+      description: Chinese Mix<br>مكس صيني
+    - image: /img/japanese mix.jpg
+      description: Japanese Mix<br>مكس ياباني
+    - image: /img/mixed rice crackers.jpg
+      description: Mixed Rice Crackers<br>مقرمشات أرز متنوعة
+    - image: /img/sweet kri kri.jpg
+      description: Plain Kri Kri<br>كري كري عادي
+    - image: /img/smoked kri kri.jpg
+      description: Smoked Kri Kri<br>كري كري مدخن
+    - image: /img/cheesy kri kri.jpg
+      description: Cheesy Kri Kri<br>كري كري بالجبنة
+    - image: /img/ketchup kri kri.jpg
+      description: Ketchup Kri Kri<br>كري كري بالكاتشب
+    - image: /img/salted white pumpkin seeds.jpg
+      description: Salted White Pumpkin Seeds<br>بذر قرع أبيض مملح
+    - image: /img/unsalted white pumpkin seeds.jpg
+      description: Unsalted White Pumpkin Seeds<br>بذر قرع أبيض غير مملح
+    - image: /img/masri seeds.jpg
+      description: Masri Seeds<br>بذر مصري
+    - image: /img/yellow melon seeds.jpg
+      description: Yellow Melon Seeds<br>بذر شمام أصفر
+    - image: /img/salted sunflower seeds.jpg
+      description: Salted Sunflower Seeds<br>بذر دوار الشمس مملح
+    - image: /img/unsalted sunflower seeds.jpg
+      description: Unsalted Sunflower Seeds<br>بذر دوار الشمس غير مملح
+    - image: /img/yellow soft chickpeas.jpg
+      description: Yellow Soft Chickpeas<br>حمص أصفر طري
+    - image: /img/white salted hard chickpeas.jpg
+      description: White Salted Hard Chickpeas<br>حمص أبيض مملح مقرمش
 
   - heading: Dried fruits فواكه مجففة
     products:
-    - image: /img/Small iranian raisins.jpg
+    - image: /img/Small Iranian raisins.jpg
       description: Small Iranian Raisins<br>زبيب إيراني حبة صغيرة
     - image: /img/Golden large raisins.jpg
       description: Golden Large Raisins<br>زبيب حبة كبيرة شقراء
@@ -283,12 +341,12 @@ product_sections:
       description: Dried Plums<br>خوخ مجفف
     - image: /img/Dried apricots.jpg
       description: Dried Apricots<br>مشمش مجفف
-    - image: /img/Dried_figs.jpg
+    - image: /img/Dried figs.jpg
       description: Dried Figs<br>تين مجفف
     - image: /img/Qamar Al Din.jpg
       description: Qamar Al-Din<br>قمر الدين
          
-  - heading: Dates تمور
+- heading: Dates تمور
     products:
     - image: /img/Medjool dates.jpg
       description: Medjool Dates<br>تمر مدجول
@@ -303,9 +361,20 @@ product_sections:
     - image: /img/Ajwa dates.jpg
       description: Ajwa Dates (Prophet's Dates)<br>تمر عجوة الرسول
 
-  - heading: Other products منتجات أخرى
+- heading: Premium Chocolate شوكولاتة فاخرة
     products:
-    - image: /img/Green coffee.jpg
-      description: Holiday gift bundle with 3 coffee types.
-        
+    - image: /img/Medjool dates.jpg
+      description: Medjool Dates<br>تمر مدجول
+
+- heading: Premium Malban ملابن فاخرة
+    products:
+    - image: /img/Medjool dates.jpg
+      description: Medjool Dates<br>تمر مدجول
+
+- heading: Other products منتجات أخرى
+   products:
+    - image: /img/Gummies.jpg
+      description: Gummies halal<br>غاميز حلال
+    - image: /img/Candies.jpg
+      description: Candies<br>بون بون  
 ---
