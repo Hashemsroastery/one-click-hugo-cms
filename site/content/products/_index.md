@@ -171,6 +171,8 @@ product_sections:
         description: Chinese salt<br>ملح صيني
       - image: /img/Turmeric whole.jpg
         description: Turmeric (whole)<br>كركم أو عقدة صفراء (حب)
+      - image: /img/Fennel.jpg
+        description: Fennel (ground)<br>شومر (ناعم)
       - image: /img/Turmeric ground.jpg
         description: Turmeric (ground)<br>كركم أو عقدة صفراء (ناعم)
       - image: /img/Fattoush.jpg
@@ -230,7 +232,7 @@ product_sections:
       - image: /img/Nigella seeds.jpg
         description: Nigella seeds<br>حبة البركة
       - image: /img/Fennel.jpg
-        description: Fennel (whole and ground)<br>شومر (حب وناعم)
+        description: Fennel<br>شومر
       - image: /img/Flax seeds.jpg
         description: Flax seeds<br>بذر كتان
       - image: /img/Chia seeds.jpg
