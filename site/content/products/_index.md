@@ -331,6 +331,8 @@ product_sections:
         description: Salted Sunflower Seeds<br>بذر دوار الشمس مملح
       - image: /img/unsalted sunflower seeds.jpg
         description: Unsalted Sunflower Seeds<br>بذر دوار الشمس غير مملح
+      - image: /img/Almonds in shells salted.jpg
+        description: Salted Almonds in Shells<br>لوز كامل بقشره مملح  
       - image: /img/yellow soft chickpeas.jpg
         description: Yellow Soft Chickpeas<br>حمص أصفر طري
       - image: /img/white salted hard chickpeas.jpg
