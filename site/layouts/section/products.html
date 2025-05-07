@@ -5,7 +5,7 @@
 {{ if .Params.navigation_panel }}
 <style>
   .nav-btn {
-    background-color: #6F4E37; /* Coffee brown */
+    background-color: #6F4E37;
     color: white;
     border: none;
     border-radius: 4px;
@@ -15,14 +15,16 @@
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    white-space: nowrap;
+    font-size: 0.9rem;
   }
   .nav-btn:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     z-index: 10;
   }
-  .nav-btn::after {
+  .nav-btn[data-fullname]:hover::before {
     content: attr(data-fullname);
     position: absolute;
     bottom: 100%;
@@ -30,30 +32,53 @@
     transform: translateX(-50%);
     background: #6F4E37;
     color: white;
-    padding: 4px 8px;
+    padding: 6px 10px;
     border-radius: 4px;
-    font-size: 14px;
-    opacity: 0;
-    transition: opacity 0.3s;
+    font-size: 0.9rem;
     white-space: nowrap;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    pointer-events: none;
   }
-  .nav-btn:hover::after {
-    opacity: 1;
+  .nav-panel {
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
   }
 </style>
 
-<div class="bg-light-gray ph3 pv2 sticky top-0 z-1 shadow-1">
-  <div class="mw7 center">
-    <div class="flex flex-wrap justify-center">
+<div class="nav-panel">
+  <div class="nav-container">
+    <div class="nav-buttons">
       {{ range .Params.product_sections }}
-        {{ $shortName := replace .heading "products" "" | replace "منتجات" "" | truncate 10 }}
+        {{ $displayName := .heading }}
+        {{ if strings.Contains $displayName "Featured Coffee Beans" }}{{ $displayName = "Coffee" }}{{ end }}
+        {{ if strings.Contains $displayName "حبوب القهوة" }}{{ $displayName = "قهوة" }}{{ end }}
+        {{ if strings.Contains $displayName "Baladi products" }}{{ $displayName = "Baladi" }}{{ end }}
+        {{ if strings.Contains $displayName "منتجات بلدية" }}{{ $displayName = "بلدية" }}{{ end }}
+        {{ if strings.Contains $displayName "Spices" }}{{ $displayName = "Spices" }}{{ end }}
+        {{ if strings.Contains $displayName "بهارات" }}{{ $displayName = "بهارات" }}{{ end }}
+        <!-- Add more replacements as needed -->
+        
         <button 
           onclick="event.preventDefault(); document.getElementById('{{ .heading | anchorize }}').scrollIntoView({ behavior: 'smooth' });"
-          class="nav-btn f5"
+          class="nav-btn"
           data-fullname="{{ .heading }}"
         >
-          {{ $shortName }}
+          {{ $displayName }}
         </button>
       {{ end }}
     </div>
