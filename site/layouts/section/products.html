@@ -15,11 +15,13 @@
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     position: relative;
-    overflow: visible;
-    white-space: nowrap;
+    overflow: visible; /* Changed from hidden to visible */
+    white-space: normal; /* Changed from nowrap to normal */
+    text-overflow: clip; /* Prevent ellipsis */
     font-size: 0.9rem;
     width: 100%;
     text-align: left;
+    word-break: break-word; /* Allow long words to break */
   }
   .nav-btn:hover {
     transform: translateX(5px) scale(1.02);
