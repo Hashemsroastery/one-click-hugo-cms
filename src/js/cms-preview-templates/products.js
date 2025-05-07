@@ -3,7 +3,7 @@ import Jumbotron from "./components/jumbotron";
 
 export default class ProductsPreview extends React.Component {
   renderProductSection = (section, index, getAsset) => (
-    <div className="mw7 center ph3 pv3" key={index} id={section.get("heading").replace(/\s+/g, '-').toLowerCase()}>
+    <div className="mw7 center ph3 pv3" key={index} id={section.get("heading").replace(/[^\w\s]/gi, '').replace(/\s+/g, '-').toLowerCase()}>
       <h2 className="f2 b mb3 tc">{section.get("heading")}</h2>
       <div className="flex flex-wrap mhn1">
         {(section.get("products") || []).map((product, i) => (
@@ -26,23 +26,33 @@ export default class ProductsPreview extends React.Component {
     </div>
   );
 
-  renderNavigationPanel = (productSections) => (
-    <div className="mw7 center ph3 pt4 pb2 sticky top-0 bg-white z-1 shadow-1">
-      <div className="overflow-x-auto">
-        <div className="flex nowrap pb2">
-          {productSections.map((section, index) => (
-            <a 
-              href={`#${section.get("heading").replace(/\s+/g, '-').toLowerCase()}`}
-              className="f5 no-underline dib ph3 pv2 mr2 bg-light-gray hover-bg-light-blue hover-white br2"
-              key={index}
-            >
-              {section.get("heading")}
-            </a>
-          ))}
+  renderNavigationPanel = (productSections) => {
+    const scrollToSection = (heading) => {
+      const id = heading.replace(/[^\w\s]/gi, '').replace(/\s+/g, '-').toLowerCase();
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    return (
+      <div className="mw7 center ph3 pt4 pb2 sticky top-0 bg-white z-1 shadow-1">
+        <div className="overflow-x-auto">
+          <div className="flex nowrap pb2">
+            {productSections.map((section, index) => (
+              <button
+                onClick={() => scrollToSection(section.get("heading"))}
+                className="f5 no-underline dib ph3 pv2 mr2 bg-light-gray hover-bg-light-blue hover-white br2 pointer bn"
+                key={index}
+              >
+                {section.get("heading")}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   render() {
     const {entry, getAsset} = this.props;
