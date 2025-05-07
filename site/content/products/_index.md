@@ -319,6 +319,8 @@ product_sections:
         description: Cheesy Kri Kri<br>كري كري بالجبنة
       - image: /img/ketchup kri kri.jpg
         description: Ketchup Kri Kri<br>كري كري بالكاتشب
+      - image: /img/Chili kri kri.jpg
+        description: Chili Kri Kri<br>كري كري حار
       - image: /img/salted white pumpkin seeds.jpg
         description: Salted White Pumpkin Seeds<br>بذر قرع أبيض مملح
       - image: /img/unsalted white pumpkin seeds.jpg
@@ -337,6 +339,8 @@ product_sections:
         description: Yellow Soft Chickpeas<br>حمص أصفر طري
       - image: /img/white salted hard chickpeas.jpg
         description: White Salted Hard Chickpeas<br>حمص أبيض مملح مقرمش
+      - image: /img/Sweet chickpeas.jpg
+        description: Sweet Chickpeas<br>حمص حلو (قضامي حلوة)       
 
   - heading: Dried Fruits فواكه مجففة
     products:
