@@ -347,7 +347,7 @@ product_sections:
       - image: /img/Qamar Al Din.jpg
         description: Qamar Al-Din<br>قمر الدين
          
-  - heading: Dates تمور
+  - heading: Premium Dates تمور فاخرة
     products:
       - image: /img/Medjool dates.jpg
         description: Medjool Dates<br>تمر مدجول
@@ -375,6 +375,11 @@ product_sections:
         description: Malban Super Extra<br>ملبن سوبر اكسترا
       - image: /img/Malban Extra.jpg
         description: Malban extra<br>ملبن اكسترا
+        
+  - heading: Gift هدايا
+    products:
+      - image: /img/Gifts.jpg
+        description: Gifts<br>هدايا
 
   - heading: Other products منتجات أخرى
     products:
