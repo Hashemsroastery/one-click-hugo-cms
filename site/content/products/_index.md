@@ -97,7 +97,7 @@ product_sections:
         description: Red chili (fine)<br>حر أحمر (ناعم)
       - image: /img/Red chili coarse.jpg
         description: Red chili (coarse)<br>حر أحمر (خشن)
-      - image: /img/Paprika_fine.jpg
+      - image: /img/Paprika fine.jpg
         description: Paprika (fine)<br>بابريكا (ناعم)
       - image: /img/Paprika coarse.jpg
         description: Paprika (coarse)<br>بابريكا (خشن)
