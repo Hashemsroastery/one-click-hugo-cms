@@ -35,17 +35,41 @@ export default class ProductsPreview extends React.Component {
       }
     };
 
+    const getShortName = (heading) => {
+      return heading
+        .replace("Featured Coffee Beans", "Coffee")
+        .replace("حبوب القهوة", "قهوة")
+        .replace("Baladi products", "Baladi")
+        .replace("منتجات بلدية", "بلدية")
+        .replace("Spices", "Spices")
+        .replace("بهارات", "بهارات")
+        .replace("Herbs", "Herbs")
+        .replace("أعشاب", "أعشاب")
+        .replace("Seeds", "Seeds")
+        .replace("بذور", "بذور")
+        .replace("Raw nuts", "Raw Nuts")
+        .replace("Roasted nuts", "Roasted Nuts")
+        .replace("Dried fruits", "Dried Fruits")
+        .replace("فواكه مجففة", "فواكه")
+        .replace("Dates", "Dates")
+        .replace("تمور", "تمور")
+        .replace("Premium Chocolate", "Chocolate")
+        .replace("Premium Malban", "Malban")
+        .replace("Other products", "Others")
+        .replace("منتجات أخرى", "أخرى");
+    };
+
     return (
-      <div className="mw7 center ph3 pt4 pb2 sticky top-0 bg-white z-1 shadow-1">
-        <div className="overflow-x-auto">
-          <div className="flex nowrap pb2">
+      <div className="bg-light-gray ph3 pv2 sticky top-0 z-1 shadow-1">
+        <div className="mw7 center">
+          <div className="flex flex-wrap justify-center">
             {productSections.map((section, index) => (
               <button
                 onClick={() => scrollToSection(section.get("heading"))}
-                className="f5 no-underline dib ph3 pv2 mr2 bg-light-gray hover-bg-light-blue hover-white br2 pointer bn"
+                className="f5 no-underline dib ph3 pv2 ma1 bg-white hover-bg-light-blue hover-white br2 pointer bn shadow-1"
                 key={index}
               >
-                {section.get("heading")}
+                {getShortName(section.get("heading"))}
               </button>
             ))}
           </div>
