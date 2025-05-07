@@ -5,19 +5,13 @@ export default class ProductsPreview extends React.Component {
   renderProductSection = (section, index, getAsset) => (
     <div className="mw7 center ph3 pv3" key={index} id={section.get("heading").replace(/[^\w\s]/gi, '').replace(/\s+/g, '-').toLowerCase()}>
       <h2 className="f2 b mb3 tc">{section.get("heading")}</h2>
-      <div className="flex flex-wrap mhn1">
+      <div className="product-grid">
         {(section.get("products") || []).map((product, i) => (
-          <div className="w-100 w-33-ns ph2 mb4" key={i}>
+          <div className="product-item" key={i}>
             <img
               src={getAsset(product.get("image"))}
               alt=""
-              className="db mb2 center br2 shadow-1"
-              style={{
-                width: "100%",
-                maxWidth: "450px",
-                height: "350px",
-                objectFit: "cover",
-              }}
+              className="product-image"
             />
             <p className="tc f4 lh-copy">{product.get("description")}</p>
           </div>
@@ -43,25 +37,28 @@ export default class ProductsPreview extends React.Component {
             color: white;
             border: none;
             border-radius: 4px;
-            padding: 8px 12px;
+            padding: 10px 12px;
             margin: 4px 0;
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             position: relative;
-            overflow: visible; /* Changed */
-            white-space: normal; /* Changed */
-            text-overflow: clip; /* Added */
+            overflow: visible;
+            white-space: normal;
+            text-overflow: clip;
             font-size: 0.9rem;
             width: 100%;
             text-align: left;
-            word-break: break-word; /* Added */
+            word-break: break-word;
+            line-height: 1.4;
           }
+          
           .nav-btn:hover {
             transform: translateX(5px) scale(1.02);
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             z-index: 10;
           }
+          
           .nav-btn[data-fullname]:hover::after {
             content: attr(data-fullname);
             position: absolute;
@@ -79,6 +76,7 @@ export default class ProductsPreview extends React.Component {
             z-index: 1000;
             min-width: max-content;
           }
+          
           .nav-panel {
             background-color: transparent;
             padding: 20px 10px;
@@ -90,14 +88,55 @@ export default class ProductsPreview extends React.Component {
             z-index: 100;
             overflow-y: auto;
           }
+          
           .nav-buttons {
             display: flex;
             flex-direction: column;
           }
+          
+          .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -0.5rem;
+          }
+          
+          .product-item {
+            width: 100%;
+            padding: 0 0.5rem;
+            margin-bottom: 2rem;
+          }
+          
+          .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+          }
+          
           .content-with-nav {
             margin-left: 200px;
             padding: 20px;
           }
+          
+          @media (min-width: 600px) {
+            .product-item {
+              width: 50%;
+            }
+            .product-image {
+              height: 300px;
+            }
+          }
+          
+          @media (min-width: 900px) {
+            .product-item {
+              width: 33.333%;
+            }
+            .product-image {
+              height: 350px;
+            }
+          }
+          
           @media (max-width: 768px) {
             .nav-panel {
               width: 150px;
