@@ -62,31 +62,13 @@ export default class ProductsPreview extends React.Component {
     return (
       <div className="nav-panel">
         <style jsx>{`
-          .nav-panel {
-            background-color: #f5f5f5;
-            padding: 10px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-          }
-          .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-          }
-          .nav-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 8px;
-          }
           .nav-btn {
             background-color: #6F4E37;
             color: white;
             border: none;
             border-radius: 4px;
             padding: 8px 12px;
+            margin: 4px 0;
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -94,42 +76,70 @@ export default class ProductsPreview extends React.Component {
             overflow: visible;
             white-space: nowrap;
             font-size: 0.9rem;
+            width: 100%;
+            text-align: left;
           }
           .nav-btn:hover {
-            transform: translateY(-3px) scale(1.05);
+            transform: translateX(5px) scale(1.02);
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             z-index: 10;
           }
           .nav-btn[data-fullname]:hover::before {
             content: attr(data-fullname);
             position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%);
             background: #6F4E37;
             color: white;
             padding: 6px 10px;
             border-radius: 4px;
             font-size: 0.9rem;
             white-space: nowrap;
-            margin-bottom: 8px;
+            margin-left: 8px;
             pointer-events: none;
+          }
+          .nav-panel {
+            background-color: #f5f5f5;
+            padding: 20px 10px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100vh;
+            width: 180px;
+            z-index: 100;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            overflow-y: auto;
+          }
+          .nav-buttons {
+            display: flex;
+            flex-direction: column;
+          }
+          .content-with-nav {
+            margin-left: 200px;
+            padding: 20px;
+          }
+          @media (max-width: 768px) {
+            .nav-panel {
+              width: 150px;
+            }
+            .content-with-nav {
+              margin-left: 170px;
+            }
           }
         `}</style>
         
-        <div className="nav-container">
-          <div className="nav-buttons">
-            {productSections.map((section, index) => (
-              <button
-                onClick={() => scrollToSection(section.get("heading"))}
-                className="nav-btn"
-                key={index}
-                data-fullname={section.get("heading")}
-              >
-                {this.getDisplayName(section.get("heading"))}
-              </button>
-            ))}
-          </div>
+        <div className="nav-buttons">
+          {productSections.map((section, index) => (
+            <button
+              onClick={() => scrollToSection(section.get("heading"))}
+              className="nav-btn"
+              key={index}
+              data-fullname={section.get("heading")}
+            >
+              {this.getDisplayName(section.get("heading"))}
+            </button>
+          ))}
         </div>
       </div>
     );
@@ -145,7 +155,9 @@ export default class ProductsPreview extends React.Component {
       <div>
         <Jumbotron image={image} title={entry.getIn(["data", "title"])} />
         {showNavigationPanel && this.renderNavigationPanel(productSections)}
-        {productSections.map((section, index) => this.renderProductSection(section, index, getAsset))}
+        <div className={showNavigationPanel ? "content-with-nav" : ""}>
+          {productSections.map((section, index) => this.renderProductSection(section, index, getAsset))}
+        </div>
       </div>
     );
   }
