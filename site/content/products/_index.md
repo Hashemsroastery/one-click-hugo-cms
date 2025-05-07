@@ -36,8 +36,8 @@ product_sections:
         description: Kishk<br>كشك
       - image: /img/Freek.jpg
         description: Freek<br>فريك
-      - image: /img/Sesame.jpg
-        description: Sesame<br>سمسم
+      - image: /img/Baladi sesame.jpg
+        description: Baladi Sesame<br>سمسم بلدي
       - image: /img/Sumac.jpg
         description: Sumac<br>سماق
       - image: /img/Dried mint.jpg
@@ -237,6 +237,8 @@ product_sections:
         description: Chia seeds<br>بذر الشيا
       - image: /img/Oat seeds.jpg
         description: Oat seeds<br>بذر الشوفان
+      - image: /img/White sesame.jpg
+        description: White Sesame<br>سمسم ابيض
 
   - heading: Raw Nuts قلوبات ومكسرات نيئة
     products:
