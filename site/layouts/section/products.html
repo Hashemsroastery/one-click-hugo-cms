@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title | safeHTML) }}
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
 
 {{ if .Params.navigation_panel }}
 <style>
