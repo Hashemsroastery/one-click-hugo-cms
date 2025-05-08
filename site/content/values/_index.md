@@ -1,5 +1,5 @@
 ---
-title: "Legacy"
+title: "Legacy<br>الإرث"
 image: /img/about-jumbotron.jpg
 values:
   - heading: "Abo Ali Sheikh Deeb - Ahmad Hashem"
