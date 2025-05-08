@@ -1,28 +1,29 @@
 <nav data-nav class="flex justify-between items-center center bg-white divider-grey relative">
+    <!-- Logo -->
+    <a href="/" class="pa3 db mr4 h-100 flex-auto">
+        <img src="/img/Logo - hashem.svg" alt="Hashem's logo" class="br0 db mb0 w6" style="max-width: 200px;"/>
+    </a>
 
+    <!-- Search Bar -->
+    <div class="search-container pa2">
+        <input type="text" id="productSearch" placeholder="Search products... ابحث عن المنتجات..." class="pa2 br2 b--light-gray">
+        <button onclick="searchProducts()" class="pa2 bg-light-gray br2 pointer">Search<br>بحث</button>
+    </div>
 
-	<!-- Logo -->
-	<a href="/" class="pa3 db mr4 h-100 flex-auto">
-    		<img src="/img/Logo - hashem.svg" alt="Hashem's logo" class="br0 db mb0 w6" style="max-width: 200px;"/>
-	</a>
+    <!-- Mobile Menu -->
+    <div data-mobile-menu class="mobile-menu-container">
+        <svg viewBox="0 0 100 80" width="40" height="25" class="mobile-menu-icon">
+            <rect class="menu-icon-top mobile-menu-inner" width="100" height="8"></rect>
+            <rect class="menu-icon-middle mobile-menu-inner" y="30" width="100" height="8"></rect>
+            <rect class="menu-icon-bottom mobile-menu-inner" y="60" width="100" height="8"></rect>
+        </svg>
+    </div>
 
-	<!-- Primary Nav -->
-	<div data-mobile-menu class="mobile-menu-container">
-		<svg viewBox="0 0 100 80" width="40" height="25" class="mobile-menu-icon">
-			<rect class="menu-icon-top mobile-menu-inner" width="100" height="8"></rect>
-			<rect class="menu-icon-middle mobile-menu-inner" y="30" width="100" height="8"></rect>
-			<rect class="menu-icon-bottom mobile-menu-inner" y="60" width="100" height="8"></rect>
-		</svg>
-	</div>
-
-	<ul class="flex b grey-3 nav-menu">
-		<li><a href="/products" class="pa3 no-underline db">Products<br>المنتجات</a></li>
-
-		<li><a href="/post" class="pa3 no-underline db">Spices menu<br>قائمة البهارات</a></li>
-
-		<li><a href="/values" class="pa3 no-underline db">Legacy<br>الإرث</a></li>
-
-		<li><a href="/contact" class="pa3 no-underline db">Contact<br>تواصل معنا</a></li>
-	</ul>
-
+    <!-- Primary Nav -->
+    <ul class="flex b grey-3 nav-menu">
+        <li><a href="/products" class="pa3 no-underline db">Products<br>المنتجات</a></li>
+        <li><a href="/post" class="pa3 no-underline db">Spices menu<br>قائمة البهارات</a></li>
+        <li><a href="/values" class="pa3 no-underline db">Legacy<br>الإرث</a></li>
+        <li><a href="/contact" class="pa3 no-underline db">Contact<br>تواصل معنا</a></li>
+    </ul>
 </nav>
