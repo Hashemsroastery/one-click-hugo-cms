@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Contact<br>تواصل معنا
 logo: img/Logo - hashem.svg
 contact_entries:
   - heading: Location
