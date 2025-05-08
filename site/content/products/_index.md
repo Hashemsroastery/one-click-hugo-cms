@@ -387,7 +387,9 @@ product_sections:
         
   - heading: Premium Malban ملابن فاخرة
     products:
-      - image: /img/Malban super Extra.jpg
+      - image: /img/Malban super Extra 1.jpg
+        description: Malban Super Extra<br>ملبن سوبر اكسترا
+      - image: /img/Malban super Extra 2.jpg
         description: Malban Super Extra<br>ملبن سوبر اكسترا
         
   - heading: Gift هدايا
