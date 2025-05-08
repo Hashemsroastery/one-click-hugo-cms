@@ -391,16 +391,9 @@ product_sections:
         description: Malban Super Extra<br>ملبن سوبر اكسترا
       - image: /img/Malban super Extra 2.jpg
         description: Malban Super Extra<br>ملبن سوبر اكسترا
-        
-  - heading: Gift هدايا
-    products:
-      - image: /img/Gifts.jpg
-        description: Gifts<br>هدايا
 
   - heading: Other Products منتجات أخرى
     products:
-      - image: /img/Gummies.jpg
-        description: Gummies halal<br>غاميز حلال
-      - image: /img/Candies.jpg
-        description: Candies<br>بون بون  
+      - image: /img/Honey.jpg
+        description: Honey<br>عسل 
 ---
