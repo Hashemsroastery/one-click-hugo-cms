@@ -3,9 +3,6 @@
   {{ partial "head" . }}
   <body class="sans-serif">
     
-    {{ $searchJS := resources.Get "assets/search.js" | js.Build | minify | fingerprint }}
-<script src="{{ $searchJS.RelPermalink }}" defer></script>
-    
     {{ block "header" . }}{{ partial "nav" . }}{{end}}
 
     {{ block "main" . }}{{ end }}
