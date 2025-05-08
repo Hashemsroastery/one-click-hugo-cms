@@ -18,5 +18,3 @@
 
   [plugins.inputs]
     record = true
-    start = "yarn serve"  # Ensure the site is being served locally at http://localhost:3000
-    wait-on = "http://localhost:3000"  # Wait for the site to be ready before running tests
