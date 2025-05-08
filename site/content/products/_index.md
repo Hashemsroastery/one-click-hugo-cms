@@ -1,5 +1,5 @@
 ---
-title: Products
+title: Products<br>المنتجات
 type: products
 image: /img/Main-product-header.jpg
 navigation_panel: true
