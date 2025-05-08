@@ -155,18 +155,4 @@
   {{ end }}
 </div>
 
-  {{ range .Params.product_sections }}
-    <div class="product-section">
-      <h2>{{ .heading }}</h2>
-      <div class="product-grid">
-        {{ range .products }}
-        {{/* Split English description to create ID */}}
-        {{ $englishDesc := index (split .description "<br>") 0 }}
-          <div class="product-item" id="{{ $englishDesc | urlize }}">
-            <img src="{{ .image }}" alt="{{ .description }}">
-            <p>{{ .description }}</p>
-        </div>
-        {{ end }}
-    </div>
-</div>
 {{ end }}
