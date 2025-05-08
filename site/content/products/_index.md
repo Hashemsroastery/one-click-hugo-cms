@@ -382,8 +382,6 @@ product_sections:
 
   - heading: Premium Chocolate شوكولاتة فاخرة
     products:
-      - image: /img/Premium chocolate.jpg
-        description: Premium Chocolate<br>شوكولاتة فاخرة
       - image: /img/Super premium chocolate.jpg
         description: Super Premium Chocolate<br>شوكولاتة فاخرة سوبر
         
@@ -391,8 +389,6 @@ product_sections:
     products:
       - image: /img/Malban super Extra.jpg
         description: Malban Super Extra<br>ملبن سوبر اكسترا
-      - image: /img/Malban Extra.jpg
-        description: Malban extra<br>ملبن اكسترا
         
   - heading: Gift هدايا
     products:
