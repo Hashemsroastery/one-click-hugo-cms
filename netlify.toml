@@ -18,6 +18,3 @@
 
   [plugins.inputs]
     record = true
-    build = false  # don't run tests during build phase
-    postBuild = true  # run tests after build is complete
-    quiet = false  # show more detailed logs
