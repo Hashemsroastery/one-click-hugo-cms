@@ -251,9 +251,9 @@ product_sections:
       - image: /img/Slivered almonds.jpg
         description: Slivered Almonds<br>لوز شرائح
       - image: /img/Whole almonds.jpg
-        description: Whole Almonds<br>لوز كامل
-      - image: /img/Almonds in shells.jpg
         description: Almonds in shells<br>لوز بقشره
+      - image: /img/Almonds in shells.jpg
+        description: Whole Almonds in shells<br>لوز كامل بقشره
       - image: /img/Whole cashews.jpg
         description: Whole Cashews<br>كاجو كامل
       - image: /img/Split cashews.jpg
