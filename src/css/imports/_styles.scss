@@ -30,3 +30,32 @@
   height: 100%;
   object-fit: cover;
 }
+
+.search-container {
+    flex-grow: 1;
+    max-width: 400px;
+    margin: 0 20px;
+}
+
+#productSearch {
+    width: 70%;
+    border: 1px solid #ddd;
+}
+
+.search-container button {
+    margin-left: 5px;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        order: 3;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+    
+    #productSearch {
+        width: 70%;
+    }
+}
