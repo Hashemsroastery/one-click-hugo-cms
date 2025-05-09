@@ -14,10 +14,10 @@ blurb:
 intro:
   heading: Store location and owner
   text: The store is located in the heart of Bent Jbeil (Sahet al-saray) on the
-    main street. The owner of the store is the father Mohammad Hashem which gave
+    main street. The owner of the store is the father Mohammad Hashem who gave
     all his life and dedication to make his business succeed despite all the
-    challenges that the region has faced. It is still managed by him and his
-    sons Hassan, Ahmad and Ali till the moment.
+    challenges that the region has faced. It is still managed, till this moment, by him and his
+    sons Hassan, Ahmad and Ali.
 products:
   - image: img/award.jpg
     text: 'Our excellence lies not only in the variety and quality of our products, but also in the consistent cleanliness of our store.
