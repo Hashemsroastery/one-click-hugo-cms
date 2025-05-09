@@ -1,0 +1,1 @@
+<pre> +++ title = "My Widget" +++ &lt;button class="snipcart-add-item" data-item-id="widget001" data-item-price="29.99" data-item-url="/products/widget/" data-item-name="My Widget" data-item-description="A great widget for all your needs." data-item-image="https://example.com/widget.jpg"&gt; Add to Cart &lt;/button&gt; </pre>
